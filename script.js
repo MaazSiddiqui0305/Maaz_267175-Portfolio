@@ -45,3 +45,5 @@ contactForm.addEventListener("submit", (event) => {
   formFeedback.style.color = "#dce8c9";
   contactForm.reset();
 });
+const year = new Date().getFullYear();
+console.log("Portfolio year:", year);
