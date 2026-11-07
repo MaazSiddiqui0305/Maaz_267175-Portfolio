@@ -36,7 +36,16 @@ h1, h2, h3 { font-family: Manrope, sans-serif; }
 .hero h1 span { color: var(--sage-dark); }
 .hero-description { max-width: 490px; color: var(--muted); font-size: 1.05rem; }
 .hero-actions { display: flex; align-items: center; gap: 27px; margin-top: 32px; }
-.button { display: inline-flex; justify-content: center; align-items: center; gap: 22px; border: 0; cursor: pointer; padding: 14px 20px; font-weight: 700; font-size: .88rem; transition: transform .2s, background .2s; }
+.button { 
+  .button {
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(52, 78, 65, 0.2);
+}
+  display: inline-flex; justify-content: center; align-items: center; gap: 22px; border: 0; cursor: pointer; padding: 14px 20px; font-weight: 700; font-size: .88rem; transition: transform .2s, background .2s; }
 .button:hover { transform: translateY(-3px); }
 .button-primary { color: white; background: var(--forest); border-radius: 4px; }
 .button-primary:hover { background: var(--sage-dark); }
