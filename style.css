@@ -89,8 +89,15 @@ h2 { font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; letter-spacing: -2.5
 .skill-card p { font-size: .82rem; color: var(--muted); }
 .projects-section { background: var(--cream); }
 .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
-.project-card { background: var(--paper); padding: 14px; }
-.project-visual { min-height: 290px; position: relative; display: grid; place-items: center; overflow: hidden; }
+.project-card {
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(52, 78, 65, 0.1);
+}.project-visual { min-height: 290px; position: relative; display: grid; place-items: center; overflow: hidden; }
 .fashion-visual { background: #dce2d2; }
 .local-visual { background: #d7ded1; }
 .visual-tag { position: absolute; top: 18px; left: 20px; color: var(--forest); font-size: .58rem; z-index: 1; }
